@@ -42,4 +42,26 @@ Download Postman pada [Chrome Web Store](https://chrome.google.com/webstore/deta
 
 ## 2.3 Instruksi Deploy Model dengan Menggunakan Postman
 ### Step 1 
-![Step 1](file:///C:/Users/topikz064115/Pictures/Step1.JPG)
+Step 1, pada tampilan awal Postman pilih header lalu pada kolom key isi dengan Content-type, selanjutnya isi value dengan application/json. Jika sudah maka tampilan akan seperti dibawah 
+![Step 1](https://github.com/TopikZulkarnain/Deployment-Model-Flask/blob/master/Step1.JPG?raw=true)
+
+### Step 2
+Langkah selanjutnya pilih kolom Body,  klit raw, kemudian isi params dengan 'znik41@pythonanywhere.com/api' dengan metode POST. Gambar dari step ini dapat dilihat dibawah ini
+![Step 2](https://github.com/TopikZulkarnain/Deployment-Model-Flask/blob/master/step2.JPG?raw=true)
+
+### Step 3
+Pada langkah ini, akan diinput nilai-nilai dari feature untuk memprediksi status credit scoring dengan contoh-contoh sebagai berikut :
+
+#### Untuk satu observasi dapat dilihat pada gambar berikut :
+![Step 3](https://github.com/TopikZulkarnain/Deployment-Model-Flask/blob/master/step3.JPG?raw=true)
+Pada gambar diatas terlihat bahwa hanya dicari status credit scoring hanya satu orang (satu observasi) berdasarkan feature yang ada pada model.pkl . Berdasarkan hasil prediksi, didapatkan kesimpulan bahwa status credit scoringnya 'not pass'
+
+#### Untuk dua atau lebih observasi dapat dilihat pada gambar berikut :
+![Step 4](https://github.com/TopikZulkarnain/Deployment-Model-Flask/blob/master/step4.JPG?raw=true)
+Untuk input dua atau lebih orang pada satu kali request dengan cara mengulangi input dan memishkan antara inputnya dengan separator ',' sebagai mana pada contoh gambar diatas (pada contoh diatas 10 observasi). Didapatkan bahwa hanya 3 orang yang memiliki status credit scoring "pass"
+
+ini adalah akhir dari instruksi penggunaan model prediksi credit scoring dengan menggunakan Postman.
+
+Semoga bermanfaat 
+
+n_n
