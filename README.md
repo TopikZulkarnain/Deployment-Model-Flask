@@ -12,9 +12,10 @@ Repositori membahas tentang penggunaan model credit scoring yang bertujuan untuk
    1.3 Flask <br>
 2. Postman API<br>
    2.1 Hal yang perlu diketahui tentang Postman <br>
-   2.2 Instruksi Deploy Model dengan Menggunakan Postman<br>
+   2.2 Installasi Postman <br>
+   2.3 Instruksi Deploy Model dengan Menggunakan Postman<br>
 
-# 1 Pengenalan Model
+# 1. Pengenalan Model
 ## 1.1 Data
 Data yang digunakan pada case ini (tersedia direpositori ini) adalah data historical kredit dengan 14 feature dan 1 label, dan dari data ini tidak semua feature akan digunakan. Feature yang digunakan adalah :
 1. LIMIT_BAL = batas pemindahan saldo tagihan dari satu kartu kredit (yang digunakan saat ini) ke kartu kredit lain <br>
@@ -24,10 +25,20 @@ Data yang digunakan pada case ini (tersedia direpositori ini) adalah data histor
 5. AGE = usia  <br>
 
 ## 1.2 Model
-Model yang digunakan untuk memprediksi credit scoring berdasarkan historical data adalah Random Forest dengan tingkat akurasi 81%. Model ini dibentuk dalam format .pkl sehingga model ini termasuk dengan data nya sudah dapat di deploy dengan mudah. model.pkl akan di deploy dalam Flask pada pythonanywher.com sehingga model ini dapat digunakan oleh siapapun.
+Model yang digunakan untuk memprediksi credit scoring berdasarkan historical data adalah Random Forest dengan tingkat akurasi 81%. Model ini dibentuk dalam format .pkl sehingga model ini termasuk dengan data nya sudah dapat di deploy dengan mudah. model.pkl akan di deploy dalam Flask pada python anywhere sehingga model ini dapat digunakan oleh siapapun.
 
 ## 1.3 Flask
-Setelah tahap pembuatan model, maka selanjutnya dibentuk Machine Learning API dengan menggunakan Flask yaitu suatu web framework python. Dari Flask tersebut dapat digunakan sebagai server pada web pythonanywhere.com
+Setelah tahap pembuatan model, maka selanjutnya dibentuk Machine Learning API dengan menggunakan Flask yaitu suatu web framework python. Dari Flask tersebut dapat digunakan sebagai server pada web python anywhere. 
 
 # 2. Postman API
 ![Gambar Postman](https://4.bp.blogspot.com/-VqgPEhQKIa8/WoXNjwiAv5I/AAAAAAAHxh0/HXQ7aJycSaoK0TjQ2wuAjZqqxSKc6pLTACLcBGAs/s1600/postman_logo.png)
+
+## 2.1 Hal yang Perlu Diketahui Tentang Postman
+Postman adalah client HTTP yang sangat bagus untuk web service testing, mengembangkan dan mendokumenkan API dengan memperbolehkan pengguna untuk menaruhkan request HTTP yang sederhana dan yang kompleks. Postmand tersedia pada Google Chrome, pada tahap berikutnya akan dijelaskan bagaimana proses installasi Postman diChrome. Postman REST Client adalah salah satu applikasi yang paling produktif di Chrome Web Store, dengan lebih dari 348.000 user dan lebih dari 63.000 collections shared lewat Postman, itulah alasannya kita akan memakai postman untuk mendeploy model. 
+
+## 2.2 Installasi Postman
+Download Postman pada [Chrome Web Store](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en), setelah didownload lalu add to chrome extension. Jika sudah dilakukan, launch postman sehingga terdapat tampilan awal Postman seperti gambar dibawah
+![Gambar Awal Postman](https://developers.sap.com/tutorials/api-tools-postman-install/_jcr_content.github-proxy.1564056317.file/03.png)
+
+## 2.3 Instruksi Deploy Model dengan Menggunakan Postman
+### Step 1 
