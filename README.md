@@ -42,3 +42,4 @@ Download Postman pada [Chrome Web Store](https://chrome.google.com/webstore/deta
 
 ## 2.3 Instruksi Deploy Model dengan Menggunakan Postman
 ### Step 1 
+![Step 1](file:///C:/Users/topikz064115/Pictures/Step1.JPG)
